@@ -43,25 +43,9 @@ Both pipelines average 7.2 seconds (LLM generation dominates runtime).
 
 ## Visualization
 
-### Metrics Comparison
-
-![Metrics Comparison](LaTeX/figures/metrics_comparison.png)
-
-### Response Time
-
-![Response Time](LaTeX/figures/response_time.png)
-
-### Per-Question Relevance Scores
-
-![Question Scores](LaTeX/figures/question_scores.png)
-
-### GraphRAG Edge Types
-
-![Graph Structure](LaTeX/figures/graph_structure.png)
-
 ### Interactive Knowledge Graph (30% Sample)
 
-![Graph Visualization](LaTeX/figures/graph_30percent_screenshot.png)
+![Graph Visualization](visualization/graph_visualization.html)
 
 To view the interactive D3.js visualization:
 
@@ -71,6 +55,10 @@ python -m http.server 8080
 ```
 
 Open: http://localhost:8080/graph_visualization.html
+
+### GraphRAG Knowledge Graph
+
+![Graph Structure](LaTeX/figures/graph_structure.png)
 
 ## Project Structure
 

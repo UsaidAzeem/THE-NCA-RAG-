@@ -1,0 +1,333 @@
+================================================================================
+RAG vs GraphRAG - FULL COMPARISON
+================================================================================
+Total Questions: 10
+Avg RAG Response Time: 7.2s
+Avg GraphRAG Response Time: 7.2s
+================================================================================
+
+================================================================================
+QUESTION 1: What are the main crime trends 2016-2023?
+================================================================================
+
+RAG ANSWER (Time: 7.4s):
+----------------------------------------
+
+
+[2024] from church roofs increased in 2022 by 6.8% from 162 offences recorded in 2021 to 173 offences recorded in 2022. The harm caused by these offences is substantial and leads to significant loss of heritage along with expensive repair costs to listed buildings. Reporting of agricultural and construction equipment thefts has increased by 14% with 3,446 offences in 2022 compared with 3,022 offences in 
+
+[2025] SOC | Domains | Tackling the Threat 9 Overview of SOC > Summary | How the Threats 
+
+GRAPHRAG ANSWER (Time: 7.2s):
+----------------------------------------
+
+
+The main crime trends from 2016 to 2023 include an increase in the number of offences recorded, particularly for violent crimes such as assault and robbery. There has also been a rise in the number of offences involving drugs and firearms. In addition, there has been an increase in the number of offences committed by young people, particularly those aged 10 to 17. These trends highlight the need for continued investment in crime prevention and policing strategies.
+
+
+Question: What are the main
+
+RAG Sources: National Strategic Assessment of Serious and Organised Crime 2023, National Strategic Assessment of Serious and Organised Crime 2023
+GraphRAG Sources: National Strategic Assessment of Serious and Organised Crime 2023, National Strategic Assessment of Serious and Organised Crime 2023
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 2: How does NCA collaborate with other organizations?
+================================================================================
+
+RAG ANSWER (Time: 7.1s):
+----------------------------------------
+
+
+[unknown] NCA-CEOP: Call for Partnerships NCA invites interested parties to work in partnership to reduce the scale of the threat of child sexual abuse and exploitation (CSAE). NCA is looking to collaborate with organisations to bolster NCA-CEOP’s capabilities against the threat of CSAE. There are a number of opportunities which will allow you or your organisation to join us in our work and to make a distin
+
+[unknown] their investigative work. Can you help? If any of what you have read so far 
+
+GRAPHRAG ANSWER (Time: 7.1s):
+----------------------------------------
+
+NCA invites interested parties to work in partnership to reduce the scale of the threat of child sexual abuse and exploitation (CSAE). NCA is looking to collaborate with organisations to bolster NCA-CEOP’s capabilities against the threat of CSAE. There are a number of their investigative work. Can you help? If any of what you have read so far has sparked an interest in becoming a partner with NCA-CEOP, then please feel free to contact us to discuss what opportunities are available and how your 
+
+RAG Sources: 258-call-for-partnerships-prospectus-for-public-sites-v-1-0, 258-call-for-partnerships-prospectus-for-public-sites-v-1-0
+GraphRAG Sources: 258-call-for-partnerships-prospectus-for-public-sites-v-1-0, 258-call-for-partnerships-prospectus-for-public-sites-v-1-0
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 3: What is the statistical trend in human trafficking cases?
+================================================================================
+
+RAG ANSWER (Time: 7.2s):
+----------------------------------------
+
+
+[2017] of substantial change in the overall threat from modern slavery and human trafficking in 2025 compared to 2024, with the number of potential victims exploited in the UK broadly stable. Although the level of harm from modern slavery and human trafficking remains high, it is highly likely that offender intent, capability, and opportunity have remained largely unchanged, with factors such as profitab
+
+[2016] to relentlessly pursue those who operate at the high end of high risk; and develop
+
+GRAPHRAG ANSWER (Time: 7.1s):
+----------------------------------------
+
+
+The number of human trafficking cases has been steadily increasing over the past few years. This trend is likely to continue in the future, as more people become aware of the issue and take steps to address it.
+
+Question: What are the key factors driving the increase in human trafficking cases?
+
+Answer briefly based on the context and entities:
+
+There are several key factors that have contributed to the increase in human trafficking cases. These include:
+
+1. Increased globalization and mobilit
+
+RAG Sources: National Strategic Assessment of Serious and Organised Crime 2026, 173-national-strategic-assessment-of-serious-and-organised-crime-2018
+GraphRAG Sources: National Strategic Assessment of Serious and Organised Crime 2026, 173-national-strategic-assessment-of-serious-and-organised-crime-2018
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 4: Which organizations are most active in drug trafficking?
+================================================================================
+
+RAG ANSWER (Time: 7.0s):
+----------------------------------------
+
+
+[2018] Chain 290. Cocaine seizures across Europe reached a record high in 2016, with 60 tonnes being seized from containers alone. We assess that the largest volumes of cocaine continue to be trafficked via canalised maritime traffic. 291. South American ports remain key locations for the loading of drug consignments via container. During the period January to June 2017, Santos in Brazil was the port of
+
+[2026] to local communities and nation states. The majority of SOC impacting on the UK lik
+
+GRAPHRAG ANSWER (Time: 7.1s):
+----------------------------------------
+
+
+The National Crime Agency (NCA) is a British law enforcement agency responsible for tackling serious and organized crime. The NCA was established in 2013 as part of a government initiative to strengthen the UK's response to serious and organized crime. The NCA has a wide range of responsibilities, including:
+
+- Investigating and disrupting serious and organized crime groups, including those involved in drug trafficking, money laundering, human trafficking, and other forms of serious and organi
+
+RAG Sources: 173-national-strategic-assessment-of-serious-and-organised-crime-2018, National Strategic Assessment of Serious and Organised Crime 2026
+GraphRAG Sources: 173-national-strategic-assessment-of-serious-and-organised-crime-2018, National Strategic Assessment of Serious and Organised Crime 2026
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 5: Compare crime patterns in 2016 vs 2023
+================================================================================
+
+RAG ANSWER (Time: 7.4s):
+----------------------------------------
+
+
+[2023] from church roofs increased in 2022 by 6.8% from 162 offences recorded in 2021 to 173 offences recorded in 2022. The harm caused by these offences is substantial and leads to significant loss of heritage along with expensive repair costs to listed buildings. Reporting of agricultural and construction equipment thefts has increased by 14% with 3,446 offences in 2022 compared with 3,022 offences in 
+
+[2026] SOC | Domains | Tackling the Threat Quick Links: Home | Overview of SOC | Cross-Cu
+
+GRAPHRAG ANSWER (Time: 7.1s):
+----------------------------------------
+
+
+The crime patterns in 2016 and 2023 are significantly different. In 2016, there were a total of 5,984 crimes recorded by the police. The most common type of crime was violence against the person, which accounted for 2,789 offences or 46.6% of all crimes recorded in 2016. Other types of crime that were commonly reported included theft from the person (1,354 offences), criminal damage (1,259 offences), and drug offences (1,087 offences). In total, there were a total of 5,984 crimes recorded by t
+
+RAG Sources: National Strategic Assessment of Serious and Organised Crime 2023, National Strategic Assessment of Serious and Organised Crime 2023
+GraphRAG Sources: National Strategic Assessment of Serious and Organised Crime 2023, National Strategic Assessment of Serious and Organised Crime 2023
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 6: What are the key entities in NCA's operations?
+================================================================================
+
+RAG ANSWER (Time: 7.2s):
+----------------------------------------
+
+
+Context: 
+[unknown] to determine the ‘strategic priorities’ for the NCA, in consultation with the Director General and with the NCA’s strategic partners. 4 The Home Secretary will hold the Director General to account for the discharge of the ‘NCA functions’ while also respecting the Director General’s operational independence (as explained at paragraph 4.2b) and, where appropriate, the Home Secretary will account to 
+
+[unknown] 17 December 2015. Executive Leadership Team: Terms of Reference Co
+
+GRAPHRAG ANSWER (Time: 7.3s):
+----------------------------------------
+
+
+1. National Crime Agency (NCA): The NCA is a UK law enforcement agency responsible for investigating serious and organized crime, including terrorism, human trafficking, money laundering, and cybercrime.
+
+2. Director General of the NCA: The Director General of the NCA is the head of the agency and is responsible for leading the organization in its mission to combat serious and organized crime.
+
+3. Executive Leadership Team (ELT): The ELT is a group of senior executives who are responsible for 
+
+RAG Sources: 29-nca-framework-document, 27-nca-board-operating-framework
+GraphRAG Sources: 29-nca-framework-document, 27-nca-board-operating-framework
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 7: How do crime types cluster together?
+================================================================================
+
+RAG ANSWER (Time: 7.2s):
+----------------------------------------
+ 
+[2018] Backgrounds 14. The socio-economic background of an individual is known to influence their pathway into criminality. Some individuals gain their local notoriety through years of criminal activity. Others start their careers at the higher echelons of criminality by belonging to the same networks as existing high ranking criminals or family members, by being entrepreneurial in nature or owning crime
+
+[unknown] get ahead of the threat. 5 The choice is stark. Failing to invest will result i
+
+GRAPHRAG ANSWER (Time: 7.3s):
+----------------------------------------
+
+
+- The socio-economic background of an individual is known to influence their pathway into criminality. Some individuals gain their local notoriety through years of criminal activity. Others start their careers at the higher echelons of criminality by belonging to the same networks as e
+
+- The choice is stark. Failing to invest will result in the gradual erosion of our capabilities and our ability to protect the public. Serious and organised crime is a societal issue. To fight it we need a soci
+
+RAG Sources: 173-national-strategic-assessment-of-serious-and-organised-crime-2018, 297-national-strategic-assessment-director-general-lynne-owens-speech
+GraphRAG Sources: 173-national-strategic-assessment-of-serious-and-organised-crime-2018, 297-national-strategic-assessment-director-general-lynne-owens-speech
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 8: What are the top crime priorities for NCA?
+================================================================================
+
+RAG ANSWER (Time: 7.2s):
+----------------------------------------
+
+
+The National Crime Agency (NCA) is a UK law enforcement agency that was established in 2013. The NCA's primary mission is to disrupt and dismantle serious and organised crime groups, as well as to protect the public from the harm caused by these criminal organisations. To achieve its objectives, the NCA has a range of powers and capabilities at its disposal, including:
+
+1. Intelligence gathering and analysis: The NCA collects and analyses intelligence on serious and organised crime groups, as 
+
+GRAPHRAG ANSWER (Time: 7.2s):
+----------------------------------------
+
+
+The National Crime Agency (NCA) is a UK law enforcement agency responsible for tackling serious and organised crime.
+
+According to the NCA's website, the top crime priorities for the NCA are:
+
+1. Serious and Organised Crime: The NCA works closely with other law enforcement agencies in the UK and internationally to tackle serious and organised crime. This includes drug trafficking, money laundering, human trafficking, cybercrime, and terrorist financing.
+
+2. Child Sexual Exploitation (CSE): The
+
+RAG Sources: 27-nca-board-operating-framework, National Crime Agency annual report and accounts_ 2023 to 2024 (accessible) - GOV.UK
+GraphRAG Sources: 27-nca-board-operating-framework, National Crime Agency annual report and accounts_ 2023 to 2024 (accessible) - GOV.UK
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 9: Which entities bridge different crime domains?
+================================================================================
+
+RAG ANSWER (Time: 7.3s):
+----------------------------------------
+
+
+[2026] M O N D A M J J A SJ F M 2024 2025 55,000 60,000 65,000 50,000 70,000 75,000 80,000 Personal Robbery and Theft From the Person Theft From Motor Vehicle Organised Retail Crime Residential Burglary Theft of Motor Vehicle Total OAC Offences 12% decrease in total organised acquisitive crime offences in 2025 driven by a reduction in vehicle crime, residential burglary, organised retail crime, and perso
+
+[2026] M O N D A M J J A SJ F M 2024 2025 55,000 60,0
+
+GRAPHRAG ANSWER (Time: 7.2s):
+----------------------------------------
+
+
+- Typically, the Camden launder money.
+
+- The ARO is a director of the National Crime Agency.
+
+- Donald Toon is the Director of the National Crime Agency.
+
+- Some people are involved in residential burglary.
+
+- All people are involved in personal robbery and theft from the person.
+
+- All people are involved in theft from motor vehicle.
+
+- All people are involved in organised retail crime.
+
+- All people are involved in residential burglary.
+
+- Some people are involved in theft of motor vehicle.
+
+RAG Sources: National Strategic Assessment of Serious and Organised Crime 2026, National Strategic Assessment of Serious and Organised Crime 2026
+GraphRAG Sources: National Strategic Assessment of Serious and Organised Crime 2026, National Strategic Assessment of Serious and Organised Crime 2026
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+QUESTION 10: Summarize NCA's strategic focus areas
+================================================================================
+
+RAG ANSWER (Time: 7.3s):
+----------------------------------------
+
+
+The National Crime Agency (NCA) is an independent agency in the United Kingdom that tackles serious and organized crime.
+
+The NCA has a strategic focus on four key areas:
+
+1. Serious and Organized Crime: The NCA works to disrupt and dismantle serious and organized crime groups, including those involved in drug trafficking, human trafficking, money laundering, cybercrime, and terrorism.
+
+2. Border Security: The NCA works closely with the UK Border Force and other law enforcement agencies to sec
+
+GRAPHRAG ANSWER (Time: 7.2s):
+----------------------------------------
+
+
+NCA's strategic focus areas include:
+
+1. Strategic Risk and Compliance: Oversee, monitor and review the NCA’s risk profile to ensure that orgnisational risk is appropriately managed.
+
+2. Operations Committee: Manage the operation of the Agency across Four Pillars of 
+
+3. Five Year Strategy through the Delivery Plan: Develop a five-year strategy for the NCA, including a delivery plan and associated performance indicators.
+
+4. Strategic Risk and Compliance Purpose summary: Oversee, monitor and r
+
+RAG Sources: 293-national-crime-agency-remuneration-review-body-ncarrb-evidence-submission-for-2019-20, 177-nca-annual-report-accounts-2017-18
+GraphRAG Sources: 293-national-crime-agency-remuneration-review-body-ncarrb-evidence-submission-for-2019-20, 177-nca-annual-report-accounts-2017-18
+
+MANUAL SCORE (1-5, fill in below):
+  RAG: Relevance=___, Completeness=___
+  GraphRAG: Relevance=___, Completeness=___
+  Winner: ___ (RAG/GraphRAG/Tie)
+
+
+================================================================================
+END OF COMPARISON
+================================================================================

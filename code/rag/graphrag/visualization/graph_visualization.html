@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GraphRAG Knowledge Graph - NCA Data</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #controls { padding: 10px; background: #f0f0f0; }
+        .node { stroke: #fff; stroke-width: 2px; }
+        .link { stroke: #999; stroke-opacity: 0.6; }
+        .tooltip {
+            position: absolute;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div id="controls">
+    <h3>NCA GraphRAG Knowledge Graph (150 nodes, 3300+ edges - WITH SEMANTIC)</h3>
+    <p>Hover over nodes/edges to see details. Scroll to zoom, drag to pan.</p>
+    <p><strong>Node Legend:</strong> Blue=Dates, Orange=Organizations, Green=Crimes, Red=Statistics</p>
+    <p><strong>Edge Legend:</strong> Gray=Co-occurrence, Blue=Affiliated, Orange=Active_in, Green=Occurs_in, <strong>Pink=SEMANTIC_SIMILAR</strong></p>
+</div>
+<div id="graph"></div>
+<script>
+// Load graph data with semantic edges
+d3.json("graphrag_with_semantic.json").then(function(graphData) {
+    
+    const width = window.innerWidth;
+    const height = window.innerHeight - 80;
+    
+    // Create SVG
+    const svg = d3.select("#graph")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+    
+    // Add zoom
+    const g = svg.append("g");
+    const zoom = d3.zoom()
+        .scaleExtent([0.1, 4])
+        .on("zoom", (event) => g.attr("transform", event.transform));
+    svg.call(zoom);
+    
+    // Create tooltip
+    const tooltip = d3.select("body").append("div").attr("class", "tooltip").style("opacity", 0);
+    
+    // Define color scale for node types
+    const colorScale = d3.scaleOrdinal()
+        .domain(["Date", "Organization", "Statistic", "Person", "Location", "Crime", "Unknown"])
+        .range(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#7f7f7f"]);
+    
+    // Create force simulation
+    const simulation = d3.forceSimulation(graphData.nodes)
+        .force("link", d3.forceLink(graphData.edges).id(d => d.id).distance(100))
+        .force("charge", d3.forceManyBody().strength(-300))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collision", d3.forceCollide().radius(30));
+    
+    // Create links
+    const link = g.append("g")
+        .selectAll("line")
+        .data(graphData.edges)
+        .enter().append("line")
+        .attr("class", "link")
+        .attr("stroke-width", 2)
+        .attr("stroke", d => d.color || "#999");
+    
+    // Create nodes
+    const node = g.append("g")
+        .selectAll("circle")
+        .data(graphData.nodes)
+        .enter().append("circle")
+        .attr("class", "node")
+        .attr("r", 10)
+        .attr("fill", d => colorScale(d.group))
+        .call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+    
+    // Add labels
+    const label = g.append("g")
+        .selectAll("text")
+        .data(graphData.nodes)
+        .enter().append("text")
+        .text(d => d.label)
+        .attr("font-size", "10px")
+        .attr("dx", 12)
+        .attr("dy", 4);
+    
+    // Tooltip events
+    node.on("mouseover", function(event, d) {
+            tooltip.transition().duration(200).style("opacity", .9);
+            tooltip.html(`<strong>${d.label}</strong><br/>Type: ${d.group}<br/>${d.title || ''}`)
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.transition().duration(500).style("opacity", 0);
+        });
+    
+    // Update positions on tick
+    simulation.on("tick", () => {
+        link
+            .attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => d.target.x)
+            .attr("y2", d => d.target.y);
+        
+        node
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
+        
+        label
+            .attr("x", d => d.x)
+            .attr("y", d => d.y);
+    });
+    
+    // Drag functions
+    function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
+    
+    function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+    }
+    
+    function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+    }
+    
+    // Add legend
+    const legend = svg.append("g")
+        .attr("transform", `translate(20, ${height - 150})`);
+    
+    const types = colorScale.domain();
+    types.forEach((type, i) => {
+        const legendRow = legend.append("g").attr("transform", `translate(0, ${i * 20})`);
+        legendRow.append("rect").attr("width", 15).attr("height", 15).attr("fill", colorScale(type));
+        legendRow.append("text").attr("x", 20).attr("y", 12).text(type).attr("font-size", "12px");
+    });
+    
+});
+</script>
+</body>
+</html>
