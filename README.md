@@ -49,15 +49,6 @@ The project includes an interactive D3.js visualization of the GraphRAG knowledg
 
 ![Graph Visualization](LaTeX/figures/graph_viz_screenshot.png)
 
-To view the interactive visualization:
-
-```bash
-cd visualization
-python -m http.server 8080
-```
-
-Open: http://localhost:8080/graph_visualization.html
-
 ### GraphRAG Knowledge Graph Screenshot
 
 ![Graph Screenshot](LaTeX/figures/graph_30percent_screenshot.png)
@@ -99,7 +90,7 @@ ollama pull mistral
 ### Run RAG Pipeline
 
 ```bash
-python code/rag/scripts/rag_pipeline.py "Your question here"
+python code/rag/scripts/rag_pipeline.py ""
 ```
 
 ### Run GraphRAG Pipeline
@@ -113,8 +104,6 @@ python code/rag/graphrag/scripts/graphrag_query_v2.py
 ```bash
 streamlit run code/rag/scripts/app_v2.py
 ```
-
-Access at http://localhost:8501
 
 ## Dataset
 
