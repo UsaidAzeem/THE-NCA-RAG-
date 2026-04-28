@@ -47,6 +47,8 @@ Both pipelines average 7.2 seconds (LLM generation dominates runtime).
 
 The project includes an interactive D3.js visualization of the GraphRAG knowledge graph (30% sample: 3,125 nodes, 3,300+ edges).
 
+![Graph Visualization](LaTeX/figures/graph_viz_screenshot.png)
+
 To view the interactive visualization:
 
 ```bash
@@ -56,7 +58,11 @@ python -m http.server 8080
 
 Open: http://localhost:8080/graph_visualization.html
 
-### GraphRAG Edge Types
+### GraphRAG Knowledge Graph Screenshot
+
+![Graph Screenshot](LaTeX/figures/graph_30percent_screenshot.png)
+
+### GraphRAG Edge Types:
 
 ![Graph Structure](LaTeX/figures/graph_structure.png)
 
